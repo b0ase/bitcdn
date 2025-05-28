@@ -25,34 +25,40 @@ export default function Home() {
           Decentralizing Content Delivery.
         </p>
 
+        {/* New Section for Page Links - Moved Up and Buttons Restyled */}
         <section className="mb-8 w-full max-w-4xl">
           <h2 className="text-2xl font-semibold mb-4 text-black text-center">Explore BitCDN</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link href="/vision" passHref>
+            <Link href="/readme" passHref>
               <button className="w-full bg-white text-black border border-gray-400 hover:bg-gray-100 font-semibold py-3 px-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                Our Vision
-              </button>
-            </Link>
-            <Link href="/tech" passHref>
-              <button className="w-full bg-white text-black border border-gray-400 hover:bg-gray-100 font-semibold py-3 px-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                Technology
-              </button>
-            </Link>
-            <Link href="/economics" passHref>
-              <button className="w-full bg-white text-black border border-gray-400 hover:bg-gray-100 font-semibold py-3 px-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                Economics
+                Our Vision & Tech
               </button>
             </Link>
             <Link href="/prd" passHref>
-              <button className="w-full bg-white text-black border border-gray-400 hover:bg-gray-100 font-semibold py-3 px-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 lg:col-start-1 lg:col-span-1">
+              <button className="w-full bg-white text-black border border-gray-400 hover:bg-gray-100 font-semibold py-3 px-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                 Product Details
+              </button>
+            </Link>
+            <Link href="/tokens" passHref>
+              <button className="w-full bg-white text-black border border-gray-400 hover:bg-gray-100 font-semibold py-3 px-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Token Ecosystem
+              </button>
+            </Link>
+            <Link href="/bitcdn-token" passHref>
+              <button className="w-full bg-white text-black border border-gray-400 hover:bg-gray-100 font-semibold py-3 px-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                $BITCDN Token
+              </button>
+            </Link>
+            <Link href="/content-tokens" passHref>
+              <button className="w-full bg-white text-black border border-gray-400 hover:bg-gray-100 font-semibold py-3 px-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Content Tokens
               </button>
             </Link>
             <a 
               href="https://github.com/b0ase/bitcdn-client"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full block bg-white text-black border border-gray-400 hover:bg-gray-100 font-semibold py-3 px-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 no-underline lg:col-span-1"
+              className="w-full block bg-white text-black border border-gray-400 hover:bg-gray-100 font-semibold py-3 px-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 no-underline"
             >
               GitHub Repository
             </a>
