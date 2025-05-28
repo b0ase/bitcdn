@@ -30,7 +30,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link href="/vision" passHref>
               <button className="w-full bg-white text-black border border-gray-400 hover:bg-gray-100 font-semibold py-3 px-5 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                Vision
+                Our Vision
               </button>
             </Link>
             <Link href="/tech" passHref>

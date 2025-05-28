@@ -63,8 +63,8 @@ export default function EconomicsPage() {
         </div>
 
         <div className="mt-12 text-center">
-          <Link href="/tech/prd/introduction" className="text-blue-600 hover:underline font-semibold text-lg">
-            Next: Product Details (PRD) &rarr;
+          <Link href="/prd" className="text-blue-600 hover:underline font-semibold text-lg">
+            Next Section: Product Details &rarr;
           </Link>
         </div>
 

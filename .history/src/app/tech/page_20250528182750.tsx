@@ -87,6 +87,7 @@ export default function TechPage() {
                     <h3 className="text-xl font-semibold mb-2 text-blue-700">{item.title}</h3>
                     <p className="text-xs text-gray-700 leading-relaxed">{item.desc}</p>
                   </div>
+                  <p className="text-blue-600 hover:underline font-semibold mt-4 self-start text-sm">Explore &rarr;</p>
                 </div>
               </Link>
             ))}

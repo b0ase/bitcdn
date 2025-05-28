@@ -25,17 +25,19 @@ export default function EconomicsPage() {
                   Understand the foundational separation between infrastructure compensation and content monetization.
                 </p>
               </div>
+              <p className="text-blue-600 hover:underline font-semibold mt-4 self-start text-sm">Learn more &rarr;</p>
             </div>
           </Link>
 
           <Link href="/economics/platform-token" passHref>
             <div className="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer h-full flex flex-col justify-between">
               <div>
-                <h2 className="text-3xl font-bold mb-2 text-blue-700">$BITCDN</h2>
+                <h2 className="text-xl font-semibold mb-2 text-blue-700">The $BITCDN Platform Token</h2>
                 <p className="text-xs text-gray-700 leading-relaxed">
                   Discover the role of our native token in governance, staking, and platform fee distribution.
                 </p>
               </div>
+              <p className="text-blue-600 hover:underline font-semibold mt-4 self-start text-sm">Learn more &rarr;</p>
             </div>
           </Link>
 
@@ -47,6 +49,7 @@ export default function EconomicsPage() {
                   Explore how Master NFTs, Revenue Share FTs, and Access NFTs empower creators.
                 </p>
               </div>
+              <p className="text-blue-600 hover:underline font-semibold mt-4 self-start text-sm">Learn more &rarr;</p>
             </div>
           </Link>
 
@@ -58,13 +61,14 @@ export default function EconomicsPage() {
                   Follow a transaction from consumer payment to distribution across the ecosystem.
                 </p>
               </div>
+              <p className="text-blue-600 hover:underline font-semibold mt-4 self-start text-sm">Learn more &rarr;</p>
             </div>
           </Link>
         </div>
 
         <div className="mt-12 text-center">
-          <Link href="/tech/prd/introduction" className="text-blue-600 hover:underline font-semibold text-lg">
-            Next: Product Details (PRD) &rarr;
+          <Link href="/prd" className="text-blue-600 hover:underline font-semibold text-lg">
+            Next Section: Product Details &rarr;
           </Link>
         </div>
 
