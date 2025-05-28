@@ -37,7 +37,7 @@ export default function Home() {
 
           <div className="bg-gray-100 p-3 sm:p-4 rounded-lg shadow-xl">
             <h2 className="text-xl font-semibold mb-1 text-black">
-              Micropayments
+              BitcoinSV Micropayments
             </h2>
             <p className="text-xs sm:text-sm text-gray-600 leading-tight">
               Integrated BSV micropayments for content and bandwidth sharing, fostering a sustainable ecosystem.

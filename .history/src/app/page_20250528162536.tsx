@@ -1,7 +1,6 @@
 "use client"; // Make this a Client Component to use onClick handlers for alerts
 
 import Image from "next/image";
-import Link from "next/link"; // Import Link component
 
 export default function Home() {
   const handleDownloadClick = (os: string) => {
@@ -37,7 +36,7 @@ export default function Home() {
 
           <div className="bg-gray-100 p-3 sm:p-4 rounded-lg shadow-xl">
             <h2 className="text-xl font-semibold mb-1 text-black">
-              Micropayments
+              BitcoinSV Micropayments
             </h2>
             <p className="text-xs sm:text-sm text-gray-600 leading-tight">
               Integrated BSV micropayments for content and bandwidth sharing, fostering a sustainable ecosystem.
@@ -80,13 +79,11 @@ export default function Home() {
           </div>
         </div>
 
-        <footer className="mt-4 pt-2 border-t border-gray-300 w-full max-w-4xl flex justify-between items-center">
+        <footer className="mt-4 pt-2 border-t border-gray-300 w-full max-w-4xl">
           <p className="text-xs text-gray-500">
+            {/* Trigger re-deploy again */}
             BitCDN - The Future of Content Delivery.
           </p>
-          <Link href="/readme" className="text-xs text-blue-600 hover:underline">
-            ReadMe
-          </Link>
         </footer>
       </div>
     </main>

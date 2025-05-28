@@ -1,13 +1,6 @@
-"use client"; // Make this a Client Component to use onClick handlers for alerts
-
 import Image from "next/image";
-import Link from "next/link"; // Import Link component
 
 export default function Home() {
-  const handleDownloadClick = (os: string) => {
-    alert(`Download for ${os} - Coming Soon TM`);
-  };
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-6 md:p-8 text-center bg-white text-black overflow-hidden">
       <div className="w-full flex flex-col items-center justify-center">
@@ -37,7 +30,7 @@ export default function Home() {
 
           <div className="bg-gray-100 p-3 sm:p-4 rounded-lg shadow-xl">
             <h2 className="text-xl font-semibold mb-1 text-black">
-              Micropayments
+              BitcoinSV Micropayments
             </h2>
             <p className="text-xs sm:text-sm text-gray-600 leading-tight">
               Integrated BSV micropayments for content and bandwidth sharing, fostering a sustainable ecosystem.
@@ -56,37 +49,21 @@ export default function Home() {
             </ul>
           </div>
           <div className="bg-gray-100 p-3 sm:p-4 rounded-lg shadow-xl flex flex-col items-center justify-center">
-            <h3 className="text-lg font-semibold mb-2 text-black">Download Client</h3>
-            <div className="space-y-2 sm:space-y-0 sm:space-x-2 flex flex-col sm:flex-row">
-              <button 
-                onClick={() => handleDownloadClick('Windows')}
-                className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-sm text-sm transition duration-300 ease-in-out transform hover:scale-105 w-full sm:w-auto"
-              >
-                Windows
-              </button>
-              <button 
-                onClick={() => handleDownloadClick('macOS')}
-                className="bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded-md shadow-sm text-sm transition duration-300 ease-in-out transform hover:scale-105 w-full sm:w-auto"
-              >
-                macOS
-              </button>
-              <button 
-                onClick={() => handleDownloadClick('Linux')}
-                className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-md shadow-sm text-sm transition duration-300 ease-in-out transform hover:scale-105 w-full sm:w-auto"
-              >
-                Linux
-              </button>
-            </div>
+            <h3 className="text-lg font-semibold mb-1 text-black">Join the Revolution</h3>
+            <p className="text-xs sm:text-sm text-gray-600 mb-2">
+              Be part of a more open and efficient internet.
+            </p>
+            <button className="bg-gradient-to-r from-orange-500 to-yellow-600 hover:from-orange-600 hover:to-yellow-700 text-white font-semibold py-2 px-4 rounded-md shadow-sm text-sm transition duration-300 ease-in-out transform hover:scale-105">
+              Get Started (Soon!)
+            </button>
           </div>
         </div>
 
-        <footer className="mt-4 pt-2 border-t border-gray-300 w-full max-w-4xl flex justify-between items-center">
+        <footer className="mt-4 pt-2 border-t border-gray-300 w-full max-w-4xl">
           <p className="text-xs text-gray-500">
+            {/* Trigger re-deploy again */}
             BitCDN - The Future of Content Delivery.
           </p>
-          <Link href="/readme" className="text-xs text-blue-600 hover:underline">
-            ReadMe
-          </Link>
         </footer>
       </div>
     </main>
