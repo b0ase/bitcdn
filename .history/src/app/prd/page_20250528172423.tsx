@@ -31,16 +31,16 @@ export default function PrdPage() {
         <section className="bg-gray-100 p-4 sm:p-5 rounded-lg shadow-xl mb-6">
           <h2 className="text-xl sm:text-2xl font-semibold mb-3 text-black">3. Core Architectural Principles</h2>
           <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 leading-relaxed">
-            <li><strong>Decentralized P2P Network:</strong> BitTorrent-based for resilience and scalability. Media files (.mp4, .mp3, etc.) are stored off-chain by seeders.</li>
+            <li><strong>Decentralized P2P Network:</strong> BitTorrent-based for resilience and scalability.</li>
             <li><strong>Two-Layer Economic Model:</strong>
               <ul className="list-circle list-inside pl-4 mt-1 space-y-0.5">
                 <li><em>Layer 1 - Infrastructure Compensation:</em> Direct micropayments to seeders for bandwidth/storage. Independent of content ownership.</li>
-                <li><em>Layer 2 - Content Monetization:</em> Tokenized representation of content rights (Master NFTs, Revenue Share FTs, Access NFTs) allowing creators/platforms to define economics and revenue flow.</li>
+                <li><em>Layer 2 - Content Monetization:</em> Tokenized representation of content rights (FTs for revenue share, NFTs for access) allowing creators/platforms to define economics and revenue flow.</li>
               </ul>
             </li>
             <li><strong>No BitCDN Consumer Client:</strong> Focus on providing backend infrastructure, node software, and SDKs/APIs for integration into third-party content platforms and applications.</li>
-            <li><strong>Wallet Agnostic:</strong> End-users interact via their preferred web3 wallets integrated with content platforms.</li>
-            <li><strong>Modular & Extensible:</strong> Designed for integration and future protocol enhancements, including leveraging existing standards for DRM and content verification.</li>
+            <li><strong>Wallet Agnostic:</strong> End-users interact via their preferred web3 wallets (e.g., HandCash for BSV, MetaMask for EVM chains) integrated with content platforms. BitCDN facilitates, but does not custody, user funds or content tokens.</li>
+            <li><strong>Modular & Extensible:</strong> Designed for integration and future protocol enhancements.</li>
           </ul>
         </section>
 
@@ -69,21 +69,20 @@ export default function PrdPage() {
           
           <h3 className="text-lg font-semibold mt-4 mb-2 text-gray-800">5.1. BitCDN Node Software (Seeder Client)</h3>
           <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 leading-relaxed mb-4">
-            <li>Core P2P engine for file sharding, distribution, and retrieval of off-chain media files.</li>
+            <li>Core P2P engine for file sharding, distribution, and retrieval.</li>
             <li>Wallet integration for receiving direct micropayments (BSV, stablecoins).</li>
-            <li>Content management and storage configuration, including verification of file integrity against manifests/hashes.</li>
+            <li>Content management and storage configuration.</li>
             <li>Performance monitoring and earning analytics.</li>
             <li>(Future) Staking mechanisms involving a native platform token ($BITCDN) if implemented.</li>
           </ul>
 
           <h3 className="text-lg font-semibold mt-4 mb-2 text-gray-800">5.2. SDKs & APIs for Platform Integrators</h3>
           <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 leading-relaxed mb-4">
-            <li>APIs for publishing content to the BitCDN network (including generation of manifests/hashes for genuine files).</li>
-            <li>SDKs for client-side applications (web, mobile) to interact with the BitCDN P2P layer for content retrieval and hash verification.</li>
-            <li>Smart contract templates/factories for creating Content Tokens (Master NFTs, Revenue Share FTs, Access NFTs).</li>
+            <li>APIs for publishing content to the BitCDN network.</li>
+            <li>SDKs for client-side applications (web, mobile) to interact with the BitCDN P2P layer for content retrieval.</li>
+            <li>Smart contract templates/factories for creating Content Tokens (FTs for revenue share, NFTs for access).</li>
             <li>APIs for managing and verifying Content Tokens.</li>
-            <li>Payment gateway integration tools to facilitate consumer payments and trigger seeder micropayments.</li>
-            <li>Hooks and compatibility layers to support integration with platform-chosen DRM solutions.</li>
+            <li>Payment gateway integration tools to facilitate consumer payments (for content) and trigger seeder micropayments.</li>
           </ul>
           
           <h3 className="text-lg font-semibold mt-4 mb-2 text-gray-800">5.3. Native Platform Token ($BITCDN) - Potential Features</h3>
@@ -100,16 +99,6 @@ export default function PrdPage() {
             <li>Documentation for node operators and developers (integrators).</li>
             <li>Onboarding information for joining the network as a seeder or integrator.</li>
           </ul>
-
-          <h3 className="text-lg font-semibold mt-4 mb-2 text-gray-800">5.5. Content Integrity, Security & DRM Strategy</h3>
-          <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 leading-relaxed">
-            <li><strong>Off-Chain File Storage:</strong> Actual media files (.mp4, .mp3, etc.) are stored by seeders on their local infrastructure, not on the blockchain.</li>
-            <li><strong>Cryptographic Verification:</strong> Content published by rights holders (via platform SDKs) will be cryptographically hashed. These hashes (or manifests of hashes for file chunks) will be associated with the content&apos;s Master NFT. Client applications retrieving data will verify received pieces against these official hashes to ensure integrity and authenticity, rejecting non-matching data.</li>
-            <li><strong>Trusted Publisher Model:</strong> Emphasis on platforms integrating BitCDN to source content from trusted publishers (e.g., studios, official distributors) as a primary quality control measure.</li>
-            <li><strong>DRM Compatibility:</strong> BitCDN is designed to be DRM-agnostic. It will transport DRM-encrypted content efficiently. Content platforms integrating BitCDN will be responsible for implementing their chosen DRM solutions (e.g., Google Widevine, Apple FairPlay). BitCDN SDKs/APIs will provide necessary hooks to facilitate this, allowing platforms to manage licenses and decryption keys as per their DRM provider&apos;s requirements.</li>
-            <li><strong>Leveraging Standards:</strong> The strategy is to utilize existing, proven standards for P2P networking, cryptographic hashing, and to ensure compatibility with established DRM technologies, rather than reinventing these complex components.</li>
-            <li><strong>(Future) Community & Reputational Systems:</strong> Explore mechanisms for community feedback or reputation systems for content and seeders to further enhance trust and quality over time.</li>
-          </ul>
         </section>
 
         <section className="bg-gray-100 p-4 sm:p-5 rounded-lg shadow-xl mb-6">
@@ -118,7 +107,7 @@ export default function PrdPage() {
             <li>Adoption by commercial CDNs and content platforms (number of integrators, volume of traffic).</li>
             <li>Growth of the active seeder network (number of nodes, total capacity).</li>
             <li>Volume of micropayments processed for infrastructure services.</li>
-            <li>Number and variety of Content Tokens (Master NFTs, Revenue Share FTs, Access NFTs) created and utilized on integrated platforms.</li>
+            <li>Number and variety of Content Tokens (FTs/NFTs) created and utilized on integrated platforms.</li>
             <li>Total value transacted for content via BitCDN-facilitated mechanisms.</li>
           </ul>
         </section>
@@ -127,10 +116,9 @@ export default function PrdPage() {
           <h2 className="text-xl sm:text-2xl font-semibold mb-3 text-black">7. Open Questions & Risks</h2>
           <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 leading-relaxed">
             <li>Defining the optimal tokenomics for a native $BITCDN platform token, ensuring it provides real utility without being a barrier.</li>
-            <li>Standardization of Content Token metadata (Master NFTs, FTs, Access NFTs) and interaction patterns for cross-platform compatibility.</li>
-            <li>Ensuring robust security mechanisms, including effective handling of data verification and strategies to mitigate malicious seeder activity.</li>
-            <li>Developing effective anti-piracy support within a decentralized framework, primarily by enabling platforms to use their chosen DRM and by ensuring verified content delivery.</li>
-            <li>Complexity of integrating with diverse existing CDN architectures and content platform backends, including their DRM and content management workflows.</li>
+            <li>Standardization of Content Token metadata and interaction patterns for cross-platform compatibility.</li>
+            <li>Ensuring robust security and anti-piracy measures within a decentralized framework.</li>
+            <li>Complexity of integrating with diverse existing CDN architectures and content platform backends.</li>
             <li>Achieving critical mass for network effects in both seeder participation and platform adoption.</li>
           </ul>
         </section>

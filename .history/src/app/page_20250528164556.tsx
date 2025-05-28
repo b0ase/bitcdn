@@ -81,12 +81,12 @@ export default function Home() {
         </div>
 
         <footer className="mt-4 pt-2 border-t border-gray-300 w-full max-w-4xl flex justify-between items-center">
-          <p className="text-xs text-gray-600">
-            &copy; {new Date().getFullYear()} BitCDN. All rights reserved.
-            <Link href="/readme" className="ml-2 text-blue-600 hover:underline">Read Me</Link>
-            <Link href="/prd" className="ml-2 text-blue-600 hover:underline">PRD</Link>
-            <Link href="/tokens" className="ml-2 text-blue-600 hover:underline">Tokens</Link>
+          <p className="text-xs text-gray-500">
+            BitCDN - The Future of Content Delivery.
           </p>
+          <Link href="/readme" className="text-xs text-blue-600 hover:underline">
+            ReadMe
+          </Link>
         </footer>
       </div>
     </main>
